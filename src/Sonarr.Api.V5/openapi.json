@@ -3453,6 +3453,14 @@
             }
           },
           {
+            "name": "includeSpecials",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          {
             "name": "includeSubresources",
             "in": "query",
             "schema": {
@@ -10330,6 +10338,13 @@
             },
             "nullable": true
           },
+          "episodeFileQualities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Quality"
+            },
+            "nullable": true
+          },
           "percentOfEpisodes": {
             "type": "number",
             "format": "double",
@@ -10663,6 +10678,13 @@
             "type": "array",
             "items": {
               "type": "string"
+            },
+            "nullable": true
+          },
+          "episodeFileQualities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Quality"
             },
             "nullable": true
           },
